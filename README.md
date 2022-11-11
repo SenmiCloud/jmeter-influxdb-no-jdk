@@ -1,14 +1,10 @@
+[![Docker](https://badgen.net/badge/icon/senmicloud%2fjmeter-influxdb-no-jdk?icon=docker&label)](https://hub.docker.com/r/senmicloud/jmeter-influxdb-no-jdk) [![GitHub stars](https://img.shields.io/github/stars/SenmiCloud/jmeter-influxdb-no-jdk.svg?style=social&label=Star&maxAge=2592000)](https://github.com/SenmiCloud/jmeter-influxdb-no-jdk)
 
-<img src="https://avatars.githubusercontent.com/u/54386046?v=4" width="200"/>
+<img src="https://avatars.githubusercontent.com/u/54386046?v=4" width="120"/>
 
 # jmeter-influxdb-no-jdk
-## Docker image of JMeter w/ InfluxDB plugin using shared host alpine version jdk
-
-https://hub.docker.com/r/senmicloud/jmeter-influxdb-no-jdk
-
-<br>
-
-### Mount your jdk/jmx plan(with `InfluxDB Backend Listener`)
+- ## Docker image of JMeter v5.5 w/ InfluxDB v2.5 plugin using shared host alpine version jdk
+- ## Mount your jdk/jmx plan(with `InfluxDB Backend Listener`)
 <br>
 
 ## Example 1
