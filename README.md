@@ -4,6 +4,8 @@
 # jmeter-influxdb-no-jdk
 ## Docker image of JMeter w/ InfluxDB plugin using shared host alpine version jdk
 
+https://hub.docker.com/r/senmicloud/jmeter-influxdb-no-jdk
+
 <br>
 
 ### Mount your jdk/jmx plan(with `InfluxDB Backend Listener`)
@@ -86,7 +88,7 @@ spec:
                 - |
                   rm -rf /jmeter/result/*
 
-                   jmeter -n -Dlog4j2.formatMsgNoLookups=true -t /jmeter/plan/load-test-plan.jmx -l /jmeter/result/load-test-result.jtl -e -o /jmeter/result -j /log/sc-job-jmeter.log
+                  jmeter -n -Dlog4j2.formatMsgNoLookups=true -t /jmeter/plan/load-test-plan-with-influxdb-backend-listener.jmx -l /jmeter/result/load-test-result.jtl -e -o /jmeter/result -j /log/sc-job-jmeter.log
 
               volumeMounts:
                 - name: configs
@@ -108,7 +110,7 @@ spec:
 ├─ /mnt/configs/
 │  ├─ sc-job-jmeter
 │  │  ├─ plan
-│  │  │  └─  planyour-plan.jmx
+│  │  │  └─  load-test-plan-with-influxdb-backend-listener.jmx
 │  │  └─ result
 │  └─ openjdk-17
 ```
